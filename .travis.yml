@@ -6,8 +6,5 @@ php:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y -qq hhvm
-  - composer self-update
 script:
-  - php --version
-  - hhvm --version
-  - for i in $(find ./scritps -name .*.php -type f); do echo $i; done;
+  - for i in $(find ./scripts/ -name .*.php -type f); do echo $i; done;
