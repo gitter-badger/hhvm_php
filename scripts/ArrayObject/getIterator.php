@@ -8,4 +8,6 @@ $i2 = $ao->getIterator();
 
 $exitCode = (spl_object_hash($i1) === spl_object_hash($i2)) * 1;
 
+var_dump($exitCode);
+
 exit($exitCode);
