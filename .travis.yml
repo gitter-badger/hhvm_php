@@ -7,4 +7,4 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y -qq hhvm
 script:
-  - for i in $(find ./scripts/ -name *.php -type f); do echo $i; done;
+  - sh -e ./checker.sh
