@@ -6,7 +6,7 @@ $i1 = $ao->getIterator();
 $ao->offsetSet(2, 'Test Second');
 $i2 = $ao->getIterator();
 
-$exitCode = (spl_object_hash($i1) === spl_object_hash($i2)) * 1;
+$exitCode = (spl_object_hash($i1) === spl_object_hash($i2)) ? 1 : 0;
 
 var_dump($exitCode);
 
